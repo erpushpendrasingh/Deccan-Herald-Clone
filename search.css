@@ -1,0 +1,19 @@
+#container {
+     display: flex;
+     width: 90%;
+     flex-direction: column;
+     margin: 20px auto;
+     gap: 50px;
+}
+.imageDiv {
+     width: 200px;
+}
+.imageDiv > img {
+     width: 150px;
+}
+.card {
+     width: 600px;
+}
+.box {
+     display: flex;
+}
