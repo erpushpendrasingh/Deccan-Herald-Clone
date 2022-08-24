@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    <div id="container"></div>
+    
+</body>
+
+<script>
+    async function getData() {
+        try{
+            let API_KEY = '1519fd90223a4c3ab37f25d4c1f8e60c';
+          let res = await fetch(`https://newsapi.org/v2/everything?q=bengaluru&from=2022-08-24&sortBy=publishedAt&apiKey=${API_KEY}`);
+          let data = await res.json();
+          append(data);
+          console.log('data', data);
+
+        }
+
+        catch(err){
+            console.log('err',err);
+        }
+        
+    }
+    getData();
+     let container=document.getElementById('container');
+    function append(data){
+        container.innerHTML=""
+        for(let i=0;i<data.articles.length;i++)
+        {
+            let div=document.createElement('div');
+            let image=document.createElement('img');
+            image.src=data.articles[i].urlToImage;
+            let title=document.createElement('p')
+            title.innerText=data.articles[i].title;
+            div.append(image,title);
+
+           container.append(div);
+        }
+    }
+</script>
+</html>
