@@ -134,6 +134,12 @@ $(document).ready(function () {
           $("input[type='text']").focus();
      });
 });
+let search_btn = document.getElementById("search_btn");
+search_btn.addEventListener("click", function (event) {
+     event.preventDefault();
+     console.log(search_input.value);
+     getData(search_input.value);
+});
 
 let search_input = document.getElementById("search_input");
 search_input.addEventListener("keypress", function (event) {

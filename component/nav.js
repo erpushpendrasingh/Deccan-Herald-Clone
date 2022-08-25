@@ -293,7 +293,7 @@ const navBar = () => {
                     <i class="fi fi-br-search"></i>
                     <div class="search-box">
                         <input type="text" id="search_input" placeholder="What you are looking for?">
-                        <input type="button" value="Search">
+                        <input type="button" id="search_btn" value="Search">
                     </div>
 
                 </div>
