@@ -128,20 +128,17 @@ window.onload = () => {
           day + " " + date + " " + b + " " + year;
 };
 
-// $(document).ready(function () {
-//      $(".fi-br-search").click(function () {
-//           $(".search-box").toggle();
-//           $("input[type='text']").focus();
-//      });
-// });
-// let search = document.getElementById("search");
+$(document).ready(function () {
+     $(".fi-br-search").click(function () {
+          $(".search-box").toggle();
+          $("input[type='text']").focus();
+     });
+});
 
 let search_input = document.getElementById("search_input");
-// console.log(search_input);
 search_input.addEventListener("keypress", function (event) {
      if (event.key === "Enter") {
           event.preventDefault();
-          console.log(search_input.value);
           getData(search_input.value);
      }
 });
@@ -149,14 +146,14 @@ search_input.addEventListener("keypress", function (event) {
 const getData = async (query) => {
      // let key = `841af73467c34891a1e3a75e58b6af41`;
      let key = `58e658e9e2f74644a72c988e1cab51f3`;
+     // let key = `33f7b5ced73b487a852ae36168cbf05f`;
      try {
           let res = await fetch(
-               `https://newsapi.org/v2/everything?q=${query}&from=2022-07-24&sortBy=publishedAt&apiKey=${key}`
+               `https://newsapi.org/v2/everything?q=${query}&from=2022-07-25&sortBy=publishedAt&apiKey=${key}`
           );
           let data = await res.json();
           let result = data.articles;
           displaydata(result);
-          console.log(result);
      } catch (error) {
           console.log("error:", error);
      }
@@ -167,7 +164,6 @@ let cr = (el) => {
 let container = document.getElementById("search_result");
 let searchbox = document.getElementById("searchbox");
 const displaydata = (result) => {
-     console.log("result:", result);
      let inputbox = cr("input");
      inputbox.setAttribute("id", "query");
      inputbox.placeholder = "Search";

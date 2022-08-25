@@ -1,4 +1,4 @@
-#container {
+#search_result {
      display: flex;
      width: 90%;
      flex-direction: column;
@@ -6,14 +6,27 @@
      gap: 50px;
 }
 .imageDiv {
-     width: 200px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     width: 250px;
+     height: 210px;
 }
 .imageDiv > img {
-     width: 150px;
+     width: 250px;
+     height: 200px;
 }
 .card {
-     width: 600px;
+     width: 700px;
+     height: 200px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
 }
 .box {
+     border: 2px solid teal;
      display: flex;
+     flex-direction: row;
+     align-items: center;
+     gap: 30px;
 }
