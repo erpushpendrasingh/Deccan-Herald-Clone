@@ -224,3 +224,9 @@ for(let i=0;i<data.length;i++){
     main.append(div);}
 };
 }
+
+import navbar from "./components/nav.js";
+document.getElementById("nav").innerHTML=navbar();
+
+import footer from "./components/nav.js";
+document.getElementById("foot").innerHTML=footer();
