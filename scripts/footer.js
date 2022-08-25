@@ -1,5 +1,5 @@
-import { footer } from "../component/footerLink.js";
-document.getElementById("foot").innerHTML = footer();
+// import { footer } from "../component/footerLink.js";
+// document.getElementById("foot").innerHTML = footer();
 import { navBar } from "../component/nav.js";
 document.getElementById("navbar").innerHTML = navBar();
 
