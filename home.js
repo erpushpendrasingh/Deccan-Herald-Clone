@@ -225,8 +225,8 @@ for(let i=0;i<data.length;i++){
 };
 }
 
-import navbar from "./components/nav.js";
-document.getElementById("nav").innerHTML=navbar();
+import navBar from "./components/nav.js";
+document.getElementById("nav").innerHTML=navBar();
 
-import footer from "./components/nav.js";
+import footer from "./components/footerling.js";
 document.getElementById("foot").innerHTML=footer();
