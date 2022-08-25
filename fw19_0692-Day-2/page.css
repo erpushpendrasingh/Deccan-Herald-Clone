@@ -1,9 +1,45 @@
 
+body{
+    background-color: rgb(229,238,247);
+    width:80%;
+    margin: auto;
+}
 #container{
     display:grid;
     grid-template-columns: repeat(3,1fr);
+    gap: 20px 30px;
+    margin:auto;
+
+}
+#container>div>#child>img{
+    width:20%;
+    margin-left: 2%;
+}
+#container>div>img{
+    width:100%;
+    display: block;
+    margin: auto;
+}
+#container>div>#child{
+    display: flex;
+    margin-top: 2%;
     gap:20px;
+ 
 }
-img{
-    width:50%;
+#container>div{
+    background-color: #f6f6f6;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+    
 }
+#container>div>#child>p{
+    font-weight: bold;
+    margin-left: 2%;
+}
+#container>div>p{
+    font-weight: bold;
+    margin-left: 2%;
+}
+
+
+
