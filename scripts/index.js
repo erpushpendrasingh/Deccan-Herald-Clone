@@ -140,16 +140,26 @@ search_input.addEventListener("keypress", function (event) {
      if (event.key === "Enter") {
           event.preventDefault();
           getData(search_input.value);
+          console.log(search_input.value);
      }
+});
+
+let search_btn = document.getElementById("search_btn");
+search_btn.addEventListener("click", function (event) {
+     event.preventDefault();
+     console.log(search_input.value);
+     getData(search_input.value);
 });
 
 const getData = async (query) => {
      // let key = `841af73467c34891a1e3a75e58b6af41`;
-     let key = `58e658e9e2f74644a72c988e1cab51f3`;
+     // let key = `58e658e9e2f74644a72c988e1cab51f3`;
      // let key = `33f7b5ced73b487a852ae36168cbf05f`;
+     // newsapi.org/v2/everything?q=tesla&from=2022-07-26&sortBy=publishedAt&apiKey=a8c42c55e79c4f24931e0359b4081762
+     // https://newsapi.org/v2/everything?q=${query}&from=2022-07-25&sortBy=publishedAt&apiKey=${key}
      try {
           let res = await fetch(
-               `https://newsapi.org/v2/everything?q=${query}&from=2022-07-25&sortBy=publishedAt&apiKey=${key}`
+               `https://newsapi.org/v2/everything?q=${query}&from=2022-07-26&sortBy=publishedAt&apiKey=a8c42c55e79c4f24931e0359b4081762`
           );
           let data = await res.json();
           let result = data.articles;
@@ -162,11 +172,8 @@ let cr = (el) => {
      return document.createElement(el);
 };
 let container = document.getElementById("search_result");
-let searchbox = document.getElementById("searchbox");
 const displaydata = (result) => {
-     let inputbox = cr("input");
-     inputbox.setAttribute("id", "query");
-     inputbox.placeholder = "Search";
+     container.innerHTML = null;
      result.forEach((element) => {
           let image = cr("img");
           image.src = element.urlToImage;
@@ -193,5 +200,4 @@ const displaydata = (result) => {
 
           container.append(box);
      });
-     searchbox.append(inputbox);
 };
