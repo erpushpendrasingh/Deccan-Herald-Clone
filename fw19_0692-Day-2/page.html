@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <div>
+        <p>Home / Bengaluru</p>
+    </div>
+    <div id="nav">
+        <div id="first">Bangalore</div>
+        <div id="second">
+            <a href="#">TOP STORIES</a>
+            <a href="#">CRIME</a>
+            <a href="#">POLITICS</a>
+            <a href="#">INFRASTRUCTURE</a>
+            <a href="#">LIFE IN THE CITY</a>
+
+        </div>
+    </div>
+      
+        <div class="mid-div">
+         <a href="#"><h1>TOP STORIES</h1></a>
+         <a href="#" ><p class="view">VIEW ALL</p></a>
+        </div>
+
+    <div id="container"></div>
+    
+</body>
+
+<script>
+    async function getData() {
+        try{
+            let API_KEY = '1519fd90223a4c3ab37f25d4c1f8e60c';
+          let res = await fetch(`https://newsapi.org/v2/everything?q=bengaluru&from=2022-08-24&sortBy=publishedAt&apiKey=${API_KEY}`);
+          let data = await res.json();
+          append(data);
+          console.log('data', data);
+
+        }
+
+        catch(err){
+            console.log('err',err);
+        }
+        
+    }
+    getData();
+     let container=document.getElementById('container');
+    function append(data){
+        container.innerHTML=""
+        for(let i=0;i<data.articles.length;i++)
+        {
+            let div=document.createElement('div');
+
+            if(i===1||i===3||i===4||i===5){
+                
+                let div1=document.createElement('div');
+            div1.setAttribute('id','child');
+
+            let div2=document.createElement('div');
+            div2.setAttribute('id','child');
+
+            let div3=document.createElement('div');
+            div3.setAttribute('id','child');
+
+            let image=document.createElement('img');
+            let image2=document.createElement('img');
+            let image3=document.createElement('img');
+
+            let title=document.createElement('p');
+            let title2=document.createElement('p');
+            let title3=document.createElement('p');
+            
+            image.src=data.articles[i].urlToImage;
+            title.innerText=data.articles[i].title;
+        
+            image2.src=data.articles[i+1].urlToImage;
+            title2.innerText=data.articles[i+1].title;
+             
+            image3.src=data.articles[i+2].urlToImage;
+            title3.innerText=data.articles[i+2].title;
+            
+            
+           
+            div1.append(image,title);
+            div2.append(image2,title2);
+            div3.append(image3,title3);
+
+           div.append(div1,div2,div3);
+           container.append(div);
+
+            }else{
+               
+                let img=document.createElement('img');
+
+                img.src=data.articles[i].urlToImage;
+
+                let description=document.createElement('p');
+                description.innerText=data.articles[i].title;
+
+                let publish=document.createElement('p');
+                publish.innerText=data.articles[i].publishedAt;
+
+              div.append(img,description,publish);
+              container.append(div);
+
+            }
+
+                 
+        
+        }
+   }
+
+ 
+
+</script>
+</html>
+<script src="index.js"></script>
+
+
