@@ -7,7 +7,7 @@ margin:10px auto;
 
 }
 #append>div>img{
-    width:370px;
+    width:350px;
     height:300px;
     display: block;
     margin: auto;
@@ -94,7 +94,7 @@ h1{
     padding: 15px;
 }
 #stories>div>img{
-    width:270px;
+    width:250px;
     height:200px;
     display: block;
     margin: auto;
@@ -162,7 +162,7 @@ margin:10px auto;
 
 }
 #karnataka>div>img{
-    width:370px;
+    width:350px;
     height:300px;
     display: block;
     margin: auto;
@@ -201,7 +201,7 @@ margin:10px auto;
 
 }
 #banglure>div>img{
-    width:370px;
+    width:350px;
     height:300px;
     display: block;
     margin: auto;
@@ -231,4 +231,9 @@ margin:10px auto;
 }
 h1:first-child{
     margin-top: 250px;
+}
+h3:hover{
+    cursor: pointer;
+    border-bottom: 1px solid;
+    font-size: 13px;
 }
