@@ -1,0 +1,326 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;    
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.section-container1 {
+    width: auto;
+    max-width: 1180px;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#top{
+    text-transform: uppercase;
+}
+#top h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+#top h1 {
+    width: 100%;
+    background: #f6f6f6;
+    padding: 1.5rem 0;
+    text-align: center;
+    border-bottom: dashed 1.5px #80808038;
+}
+
+
+
+#forms{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 37px 28px;
+    margin: 50px auto;
+}
+.subscribe_newsletter {
+    background: #e5f3ff;
+    border: solid 2px #d1eaf3;
+    border-radius: 0;
+    position: relative;
+    padding: 1.25rem;
+    min-height: 325px;
+}
+.newsletter-landing-page .section-heading-wrapper {
+    background-color: #e5f3fe;
+}
+.section-heading-wrapper:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+#newsletters_manage-first .sign-up-all {
+    color: #2687a9;
+    font-weight: bolder;
+}
+.subscribe_newsletter .title-for-all {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+#btn_container {
+    margin-top: 15px;
+    position: absolute;
+    bottom: 10px;
+    width: 90%;
+}
+.newsletter-landing-page #subscriber_email {
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 0 !important;
+    height: 42px;
+    width: 60%;
+    border-radius: 0;
+}
+#newsletters_manage-first .f-right {
+    background-color: #2688aa;
+}
+
+#agree_container_3_0 p {
+    font-size: 15px;
+    color: #000;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    max-width: 100%;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    min-height: 100px;
+    line-height: 1.5;
+}
+
+#btn_container {
+    margin-top: 15px;
+    position: absolute;
+    bottom: 10px;
+    width: 90%;
+}
+.subscribe_newsletter .frequency {
+    margin: 30px 0;
+    color: gray;
+    font-size: 13.8px;
+}
+#subscriber_email {
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 0 !important;
+    height: 42px;
+    width: 60%;
+
+}
+#subscriber_email_first{
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 0 !important;
+    height: 42px;
+    width: 60%;
+}
+input[type=text]{
+    box-shadow: none;
+    margin-bottom: 5px;
+    padding: 6px;
+}
+#first_value {
+    width: 40%;
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+    height: 42px;
+    font-size: 15px;
+    line-height: 27px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+#subscriber_email {
+    display: none;
+}
+#subscribe_btn {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+    width: 39%;
+    border-radius: 0;
+    height: 42px;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 15px;
+    line-height: 27px;
+    font-weight: 700;
+}
+#subscribe_btn_first {
+    color: #fff;
+    border:none;
+    min-width: 39%;
+    border-radius: 0;
+    height: 42px;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 15px;
+    line-height: 27px;
+    font-weight: 700;
+}
+#btn_container #see-latest {
+    padding-top: 12px;
+    background-color: rgb(255, 255, 255);
+    border-color: #fff;
+    width: 48%;
+    height: 42px;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+}
+#see-latest.show{
+    display: none;
+}
+#btn_container a {
+    color: #333 !important;
+    text-decoration: none !important;
+    text-align: center;
+    background-color: #fff;
+    width: 50%;
+    padding: 12px 35px 12px 15px;
+    font-size: 14px;
+    height: 32px;
+    position: relative;
+}
+#see-latest .fa-solid {
+    margin-left: 10px;
+    font-size: 17px !important;
+    line-height: 2px !important;
+    font-weight: 600 !important;
+    display: inline-flex;
+    padding-right: 10px;
+    position: absolute;
+    top: 22px;
+    right: 3px;
+}
+#subscribe_btn{
+    display: none;
+}
+#subscribe_btn.show{
+    display: inline;
+}
+#subscriber_email{
+    display: none;
+}
+#subscriber_email.show{
+    display: inline;
+}
+.f-left.show{
+    display: none;
+}
+input:focus
+{   
+    border: 1px solid #1670BE;
+    box-shadow: 0 0 3px #1670BE;
+    outline-offset: 0px;
+    outline: none;
+}
+#carousel{
+    width: 100%;
+    height: 80%;
+    background-image: url("img/img1.jpg");
+    background-size: 100% ;
+    background-repeat: no-repeat;
+    animation: changeImg 20s linear infinite;
+}
+#images{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 320px;
+}
+#images p{
+    display: inline;
+}
+#images>div :first-child{
+    height:7px;
+    width: 25px;
+    background-color: #2687a9;
+}
+#images>div p{
+    font-weight: 700;
+    color: #2687a9;
+    font-size: 1.2rem;
+}
+@keyframes changeImg {
+    0% { 
+        background-image: url("img/img1.jpg") ;
+    }
+    25% { 
+        background-image: url("img/img2.jpg") ;
+    }
+    50% { 
+        background-image: url("img/img3.jpg") ;
+    }
+    75% { 
+        background-image: url("img/img4.jpg") ;
+    }
+
+}
+
+@media all and (min-width: 992px) and (max-width: 1199px){
+    .section-container1 {
+    width: auto;
+    max-width: 780px;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+    #forms{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(5, auto);
+    gap: 37px 28px;
+    margin: 50px auto;
+}
+}
+
+@media all and (min-width: 650px) and (max-width: 991px){
+    .section-container1 {
+    width: 97%;
+    max-width: 780px;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+    #forms{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(5, auto);
+    gap: 37px 28px;
+    margin: 50px auto;
+}
+}
+@media all and (min-width: 0px) and (max-width: 649px){
+    .section-container1 {
+    width: 95%;
+    max-width: 370px;
+    float: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+    #forms{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(9, auto);
+    gap: 37px 28px;
+    margin: 50px auto;
+}
+}
