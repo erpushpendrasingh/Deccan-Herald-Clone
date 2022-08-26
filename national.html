@@ -1,346 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>National Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <style>
-        #container{
+        #main-contain {
+            border: 1px solid green;
+            width: 80%;
+            margin: 10px auto;
+        }
+
+        #container {
             display: flex;
             border: 1px solid green;
             width: 90%;
             height: 40px;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            }
-            #container+h2{
-                font-size: 10px;
-                color:#128296;
-            }
-           #first{
-            background-color:#128296;
+        }
+
+        #container+h2 {
+            font-size: 10px;
+            color: #128296;
+        }
+
+        #first {
+            background-color: #128296;
             padding: 8px 30px;
             text-align: center;
             color: white;
             font-family: 'DM Serif Display', serif;
-           
-            
-           }
-           
-           #second>ul{
+
+
+        }
+
+        #second>ul {
             display: flex;
             gap: 10px;
-            
-           }
-           li{
+
+        }
+
+        li {
             font-size: 10px;
             font-family: 'Libre Baskerville', serif;
-            }
-            #second>ul{
-                list-style-type: none;
-            }
-            p{
-                font-size: 10px;
-                margin-bottom: 0px;
-            }
-            #bNews{
-                border: 1px solid black;
-                width: 50%;
-                display: flex;
-                gap: 10px;
-            }
-           #bNews :first-child img{
+        }
+
+        #second>ul {
+            list-style-type: none;
+        }
+
+        p {
+            font-size: 10px;
+            margin-bottom: 0px;
+        }
+
+        #bNews {
+            border: 1px solid black;
+            width: 50%;
+            display: flex;
+            gap: 10px;
+        }
+
+        #bNews :first-child img {
             width: 250px;
             height: 220px;
-           }
-          
-           #bsec img{
+        }
+
+        #bsec img {
             width: 50px;
-           }
-           #bsec{
+        }
+
+        #bsec {
             background-color: #F6F6F6;
-           }
-           #bNews_2{
+        }
+
+        #bNews_2 {
             display: flex;
-            
+
             width: 86%;
             border: 1px solid red;
             height: 220px;
-           }
-           
-           #bNews_2>div{
+        }
+
+        #bNews_2>div {
             width: 30%;
             margin-right: 15px;
             gap: 20px;
             height: 220px;
             background-color: #F6F6F6;
             border: 1px solid black;
-           }
-           #bNews_2_img>div img{
+        }
+
+        #bNews_2_img>div img {
             width: 105px;
             height: 90px;
-           }
-           .first_news{
+        }
+
+        .first_news {
             display: grid;
-            grid-template-columns: repeat(2,1fr);
-           }
-           .first_news>div p{
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .first_news>div p {
             width: 110px;
             margin-top: 25px;
-           }
-           .second_news{
+        }
+
+        .second_news {
             display: grid;
-            grid-template-columns: repeat(2,1fr);
-           }
-           .second_news>div p{
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .second_news>div p {
             width: 110px;
             margin-top: 25px;
-           }
-           #bNews_sec>ul>li{
+        }
+
+        #bNews_sec>ul>li {
             padding: 7px;
             width: 170px;
-            margin-top:10px ;
-            
-            }
-            #bNEws_third>div{
-                margin-left: 5px;
-            }
-            .elon{
-                display: grid;
-            grid-template-columns: repeat(2,1fr); 
-            }
-            .oil{
-                display: grid;
-            grid-template-columns: repeat(2,1fr);
-            }
-            .us{
-                display: grid;
-            grid-template-columns: repeat(2,1fr);
-            }
-            #family{
-                display: flex;
-                margin-top: 10px;
-            
+            margin-top: 10px;
+
+        }
+
+        #bNEws_third>div {
+            margin-left: 5px;
+        }
+
+        .elon {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .oil {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .us {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        #family {
+            display: flex;
+            margin-top: 10px;
+
             width: 86%;
             border: 1px solid red;
             height: 220px;
-            }
-            #family>div{
+        }
+
+        #family>div {
             width: 30%;
             margin-right: 15px;
             gap: 20px;
             height: 220px;
-            
+
             border: 1px solid black;
-           }
-           .family_1{
-            background-color:#8ABEC7;
-           }
-           .family_1 h2{
+        }
+
+        .family_1 {
+            background-color: #8ABEC7;
+        }
+
+        .family_1 h2 {
             padding: 35px 12px;
             color: white;
-           }
-          
-            .family_2_1{
-                display: grid;
-            grid-template-columns: repeat(2,1fr); 
-            }
-            .family_2_2{
-                display: grid;
-            grid-template-columns: repeat(2,1fr); 
-            }
-            #family_2>div img{
-                width: 90px;
-                height: 70px;
-                padding: 15px;
-            }
-            #family_2> div p{
-                margin-top: 30px;
-                
-            }
-            #family_2> div{
-                background-color: #F6F6F6
-            }
-            #family_3{
-                background-color: #F6F6F6
-            }
-            #technology{
-                border: 1px solid black;
-                width: 86%;
-                display: flex;
-                gap: 10px;
-            }
-            #tech_1>img{
-                width: 350px;
-                height: 186px;
-            }
-            #tech_2{
-                background-color: #128296;
-                color: white;
-                padding: 25px 15px;
-                height: 135px;
-                
-                
-            }
-            .tech_3_1{
-                display: grid;
-                grid-template-columns: repeat(2,1fr)
+        }
 
-            }
-            .tech_3_2{
-                display: grid;
-                grid-template-columns: repeat(2,1fr);
-                
+        .family_2_1 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
 
-            }
-            .tech_3_3{
-                display: grid;
-                grid-template-columns: repeat(2,1fr)
+        .family_2_2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
 
-            }
-            
-            
+        #family_2>div img {
+            width: 90px;
+            height: 70px;
+            padding: 15px;
+        }
 
-            
+        #family_2>div p {
+            margin-top: 30px;
 
-            </style>
+        }
+
+        #family_2>div {
+            background-color: #F6F6F6
+        }
+
+        #family_3 {
+            background-color: #F6F6F6
+        }
+
+        #technology {
+            border: 1px solid black;
+            width: 86%;
+            display: flex;
+            gap: 10px;
+        }
+
+        #tech_1>img {
+            width: 350px;
+            height: 186px;
+        }
+
+        #tech_2 {
+            background-color: #128296;
+            color: white;
+            padding: 25px 15px;
+            height: 135px;
+
+
+        }
+
+        .tech_3_1 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr)
+        }
+
+        .tech_3_2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+
+        }
+
+        .tech_3_3 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr)
+        }
+    </style>
 </head>
+
 <body>
-    <div><P>Home/Business</P></div>
-    
-    
-    <div id="container">
-        <div id="first">Business </div>
-        <div id="second">
-           <ul>
-            <li>BUSINESS NEWS</li>
-            <li>BUSINESS NEWS</li>
-            <li>BUSINESS NEWS</li>
-            <li>BUSINESS NEWS</li>
-
-           </ul> 
-        </div>
-    </div>
-    <h2>BUSINESS NEWS</h2>
-    <div id="bNews">
-        
+    <div id="navbar"></div>
+    <div id="main-contain">
         <div>
-            <img src="https://www.deccanherald.com/sites/dh/files/styles/fullcardimage/public/articleimages/2022/08/24/crude-oil-reuters-new-1134519-1660033490-1138795-1661321334.jpg?itok=R2_bAyGA" alt="" srcset="">
+            <P>Home/Business</P>
         </div>
-        <div id="bsec">
-<img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/08/24/us-dollar-istock-1138794-1661320800.jpg?itok=NN3z8QIZ" alt="" srcset="">
-<p>Dollar pauses for breath ahead of Jackson Hole</p>
-<img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/08/24/adani-1-1138578-1661260192-1138792-1661324090.jpg?itok=Gw3jNLm4" alt="" srcset="">
-<p>NDTV rises 5% after Adani makes bid 'without consent</p>
-<img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/08/24/pti-sensex-crop-1138768-1661318733.jpg?itok=QsKpM7yc" alt="" srcset="">
-<p>Markets fall after early gains tracking weak global equities</p>
+
+
+        <div id="container">
+            <div id="first">Business </div>
+            <div id="second">
+                <ul>
+                    <li>BUSINESS NEWS</li>
+                    <li>BUSINESS NEWS</li>
+                    <li>BUSINESS NEWS</li>
+                    <li>BUSINESS NEWS</li>
+
+                </ul>
+            </div>
+        </div>
+        <h2>BUSINESS NEWS</h2>
+        <div id="bNews">
+
+            <div>
+                <img src="https://www.deccanherald.com/sites/dh/files/styles/fullcardimage/public/articleimages/2022/08/24/crude-oil-reuters-new-1134519-1660033490-1138795-1661321334.jpg?itok=R2_bAyGA"
+                    alt="" srcset="">
+            </div>
+            <div id="bsec">
+                <img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/08/24/us-dollar-istock-1138794-1661320800.jpg?itok=NN3z8QIZ"
+                    alt="" srcset="">
+                <p>Dollar pauses for breath ahead of Jackson Hole</p>
+                <img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/08/24/adani-1-1138578-1661260192-1138792-1661324090.jpg?itok=Gw3jNLm4"
+                    alt="" srcset="">
+                <p>NDTV rises 5% after Adani makes bid 'without consent</p>
+                <img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/08/24/pti-sensex-crop-1138768-1661318733.jpg?itok=QsKpM7yc"
+                    alt="" srcset="">
+                <p>Markets fall after early gains tracking weak global equities</p>
+            </div>
+
+        </div>
+
+        <div id="bNews_2">
+            <div id="bNews_2_img">
+                <div class="first_news">
+                    <div><img
+                            src="https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/08/24/adani-1-1138578-1661260192-1138792-1661324090.jpg?itok=xQpxp8E8"
+                            alt="" srcset=""></div>
+                    <div>
+                        <p>NDTV rises 5% after Adani makes bid 'without consent'</p>
+                    </div>
+
+                </div>
+                <div class="second_news">
+                    <div><img
+                            src="https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/08/24/gold-istock-1136484-1660621725-1138791-1661326553.jpg?itok=BRT1RKIS"
+                            alt="" srcset=""></div>
+                    <div>
+                        <p>Dollar pauses for breath ahead of Jackson Hole</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div id="bNews_sec">
+                <ul>
+                    <li>NDTV rises 5% after adani makes bid without consent</li>
+                    <li>Gold tepid on strong dollar;focus on jackson Hole meet</li>
+                    <li>Market fall after early gains'Sensex above 59100</li>
+                    <li>Rupees fall 4 paise to 79.87 against US dollar at open</li>
+                </ul>
+            </div>
+            <div id="bNEws_third">
+                <div class="elon">
+                    <div><img
+                            src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/08/24/highlights-3-afp-1138757-1661311414.jpg?itok=Vp1QjfJm"
+                            alt="" srcset=""></div>
+                    <div>
+                        <p>Elon Musk's Twitter friendship with Indian superfan</p>
+                    </div>
+                </div>
+                <div class="oil">
+                    <div><img
+                            src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/08/24/oil-price-falls-reuters-1137234-1660836888-1138754-1661310213.jpg?itok=QvOJsw_2"
+                            alt="" srcset=""></div>
+                    <div>
+                        <p>Oil prices fall as fears of imminent OPEC+ output cut recede</p>
+                    </div>
+
+                </div>
+                <div class="us">
+                    <div><img
+                            src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/08/24/wall-street-reuters-1-1138740-1661287449.jpg?itok=ZTJTXv7W"
+                            alt="" srcset=""></div>
+                    <div>
+                        <p>US stocks end mostly lower as markets await Fed outlook</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <h2>Family Finance</h2>
+        <div id="family">
+            <div class="family_1">
+                <h2>Value Vs Growth investing:Which is better?</h2>
+            </div>
+
+            <div id="family_2">
+                <div class="family_2_1">
+                    <div><img
+                            src="https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/08/08/funds-istokc-1134081-1659900284.jpg?itok=ih0H2SWS"
+                            alt="" srcset=""></div>
+                    <div>
+                        <p>Understandindg passive Multi-Asset Funds</p>
+                    </div>
+                </div>
+                <div class="family_2_2">
+                    <div><img
+                            src="https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/07/24/anubhav-srivastava-2-1129726-1658684258.jpg?itok=tnHLQxIZ"
+                            alt="" srcset=""></div>
+                    <div>
+                        <p>Cohabiting with real assets and bonds in your portfolio</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div id="family_3">
+                <div class="elon">
+                    <div><img
+                            src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/07/25/insurance-claim-istock-1129725-1658716797.jpg?itok=SNuuerXr"
+                            alt="" srcset=""></div>
+                    <div>
+                        <p>How to avoid rejection of health insurance claims</p>
+                    </div>
+                </div>
+                <div class="oil">
+                    <div><img
+                            src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/20/istock-1283813790-1119568-1655708827.jpg?itok=oHydpk2b"
+                            alt="" srcset=""></div>
+                    <div>
+                        <p>How to build your wealth from scratch</p>
+                    </div>
+
+                </div>
+                <div class="us">
+                    <div><img
+                            src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/12/file6xpkl2lk11s1d9y4oh8v-1117574-1655056964.jpg?itok=rBB3vqIl"
+                            alt="" srcset=""></div>
+                    <div>
+                        <p>Things to keep in mind while renewing health insurance</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <h2>TECHNOLOGY</h2>
+
+        <div id="technology">
+            <div id="tech_1">
+                <img src="https://www.deccanherald.com/sites/dh/files/styles/largehorizontal/public/articleimages/2022/08/25/apple-1139020-1661366862.jpg?itok=AwBVdy4y"
+                    alt="" srcset="">
+            </div>
+            <div id="tech_2">
+                <h2>Apple confirms iPhone 14 event next month</h2>
+            </div>
+            <div id="tech_3">
+                <div class="tech_3_1">
+                    <div><img
+                            src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/08/25/hacker-istock-1139194-1661432703.jpg?itok=V8NP1W8P"
+                            alt="" srcset=""></div>
+                    <div>
+                        <p>How to avoid rejection of health insurance claims</p>
+                    </div>
+                </div>
+                <div class="tech_3_2">
+                    <div><img
+                            src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/08/25/apple-1139020-1661366862.jpg?itok=y7F3STR4"
+                            alt="" srcset=""></div>
+                    <div>
+                        <p>How to build your wealth from scratch</p>
+                    </div>
+
+                </div>
+                <div class="tech_3_3">
+                    <div><img
+                            src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/08/25/v25p5g-cov-sho-f-sel-1-1138903-1661390101.jpg?itok=o46dP4R1"
+                            alt="" srcset=""></div>
+                    <div>
+                        <p>Things to keep in mind while renewing health insurance</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </div>
 
-    <div id="bNews_2">
-        <div id="bNews_2_img">
-            <div class="first_news">
-               <div><img src="https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/08/24/adani-1-1138578-1661260192-1138792-1661324090.jpg?itok=xQpxp8E8" alt="" srcset=""></div>
-               <div><p>NDTV rises 5% after Adani makes bid 'without consent'</p></div>
-              
-            </div>
-            <div class="second_news">
-                <div><img src="https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/08/24/gold-istock-1136484-1660621725-1138791-1661326553.jpg?itok=BRT1RKIS" alt="" srcset=""></div>
-                <div><p>Dollar pauses for breath ahead of Jackson Hole</p></div>
-                
-            </div>
-            
-           
-        </div>
-        <div id="bNews_sec">
-            <ul>
-                <li>NDTV rises 5% after adani makes bid without consent</li>
-                <li>Gold tepid on strong dollar;focus on jackson Hole meet</li>
-                <li>Market fall after early gains'Sensex above 59100</li>
-                <li>Rupees fall 4 paise to 79.87 against US dollar at open</li>
-            </ul>
-        </div>
-        <div id="bNEws_third">
-            <div class="elon">
-                <div ><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/08/24/highlights-3-afp-1138757-1661311414.jpg?itok=Vp1QjfJm" alt="" srcset=""></div>
-                <div><p>Elon Musk's Twitter friendship with Indian superfan</p></div>
-            </div>
-            <div class="oil">
-                <div><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/08/24/oil-price-falls-reuters-1137234-1660836888-1138754-1661310213.jpg?itok=QvOJsw_2" alt="" srcset=""></div>
-                <div><p>Oil prices fall as fears of imminent OPEC+ output cut recede</p></div>
-                
-            </div>
-            <div class="us">
-                <div><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/08/24/wall-street-reuters-1-1138740-1661287449.jpg?itok=ZTJTXv7W" alt="" srcset=""></div>
-                <div><p>US stocks end mostly lower as markets await Fed outlook</p></div>
-            </div>
-
-        </div>
-    </div>
-    <h2>Family Finance</h2>
-    <div id="family">
-        <div class="family_1">
-         <h2>Value Vs Growth investing:Which is better?</h2>
-        </div>
-
-        <div id="family_2">
-            <div class="family_2_1">
-                <div><img src="https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/08/08/funds-istokc-1134081-1659900284.jpg?itok=ih0H2SWS" alt="" srcset=""></div>
-                <div><p>Understandindg passive Multi-Asset Funds</p></div>
-            </div>
-            <div class="family_2_2">
-                <div><img src="https://www.deccanherald.com/sites/dh/files/styles/smallhorizontal/public/articleimages/2022/07/24/anubhav-srivastava-2-1129726-1658684258.jpg?itok=tnHLQxIZ" alt="" srcset=""></div>
-                <div><p>Cohabiting with real assets and bonds in your portfolio</p></div>
-            </div>
-           
-
-        </div>
-        <div id="family_3">
-            <div class="elon">
-                <div ><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/07/25/insurance-claim-istock-1129725-1658716797.jpg?itok=SNuuerXr" alt="" srcset=""></div>
-                <div><p>How to avoid rejection of health insurance claims</p></div>
-            </div>
-            <div class="oil">
-                <div><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/20/istock-1283813790-1119568-1655708827.jpg?itok=oHydpk2b" alt="" srcset=""></div>
-                <div><p>How to build your wealth from scratch</p></div>
-                
-            </div>
-            <div class="us">
-                <div><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/06/12/file6xpkl2lk11s1d9y4oh8v-1117574-1655056964.jpg?itok=rBB3vqIl" alt="" srcset=""></div>
-                <div><p>Things to keep in mind while renewing health insurance</p></div>
-            </div>
-        </div>
-
-    </div>
-    <h2>TECHNOLOGY</h2>
-
-      <div id="technology">
-        <div id="tech_1">
-            <img src="https://www.deccanherald.com/sites/dh/files/styles/largehorizontal/public/articleimages/2022/08/25/apple-1139020-1661366862.jpg?itok=AwBVdy4y" alt="" srcset="">
-        </div>
-        <div id="tech_2">
-            <h2>Apple confirms iPhone 14 event next month</h2>
-        </div>
-        <div id="tech_3">
-            <div class="tech_3_1">
-                <div ><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/08/25/hacker-istock-1139194-1661432703.jpg?itok=V8NP1W8P" alt="" srcset=""></div>
-                <div><p>How to avoid rejection of health insurance claims</p></div>
-            </div>
-            <div class="tech_3_2">
-                <div><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/08/25/apple-1139020-1661366862.jpg?itok=y7F3STR4" alt="" srcset=""></div>
-                <div><p>How to build your wealth from scratch</p></div>
-                
-            </div>
-            <div class="tech_3_3">
-                <div><img src="https://www.deccanherald.com/sites/dh/files/styles/snippetlist/public/articleimages/2022/08/25/v25p5g-cov-sho-f-sel-1-1138903-1661390101.jpg?itok=o46dP4R1" alt="" srcset=""></div>
-                <div><p>Things to keep in mind while renewing health insurance</p></div>
-            </div>
-        </div>
-
-      </div>
+    <div id="foot"></div>
 </body>
+<script src="https://kit.fontawesome.com/00b3499e31.js" crossorigin="anonymous"></script>
+<script src="./component/nav.js"></script>
+<script src="./scripts/footer.js" type="module"></script>
+<script src="./scripts/index.js" type="module"></script>
+
 </html>

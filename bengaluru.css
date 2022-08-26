@@ -1,9 +1,8 @@
-/* body {
-     width: 80%;
-     margin: 0px uto;
-} */
-#nav {
-     border: 1px solid teal;
+#main-contain {
+     width: 88%;
+     margin: 15px auto;
+}
+#nav2 {
      height: auto;
      display: flex;
      align-items: center;
@@ -46,4 +45,37 @@
      border-bottom-style: none;
      border-left-style: none;
      border-right-style: none;
+}
+#container {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 20px 30px;
+     margin: auto;
+}
+#container > div > #child > img {
+     width: 20%;
+     margin-left: 2%;
+}
+#container > div > img {
+     width: 100%;
+     display: block;
+     margin: auto;
+}
+#container > div > #child {
+     display: flex;
+     margin-top: 2%;
+     gap: 20px;
+}
+#container > div {
+     background-color: #f6f6f6;
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+     cursor: pointer;
+}
+#container > div > #child > p {
+     font-weight: bold;
+     margin-left: 2%;
+}
+#container > div > p {
+     font-weight: bold;
+     margin-left: 2%;
 }

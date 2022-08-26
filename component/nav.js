@@ -6,7 +6,7 @@ const navBar = () => {
                 <!-- <li><i class="fa-solid fa-xmark"></i></li> -->
                 <li> <a href="index.html">Home</a></li>
                 <li class="side-dropdown">
-                    <a href="#" class="toggle">Bengaluru </a> 
+                    <a href="Bengaluru.html" class="toggle">Bengaluru </a> 
                     <ul class="side-nav-sub">
                         <li> <a href="">Top Stories</a></li>
                         <li> <a href="">Crime</a></li>
@@ -26,7 +26,7 @@ const navBar = () => {
                     </ul>
                 </li>
                 <li class="side-dropdown">
-                    <a href="#" class="toggle">National</a>
+                    <a href="national.html" class="toggle">National</a>
                     <ul class="side-nav-sub">
                         <li> <a href="">Politics</a></li>
                         <li> <a href="">Coronavirus</a></li>
@@ -192,7 +192,7 @@ const navBar = () => {
                 <nav class="">
                     <ul class="nav-main">
                         <li> <a href="index.html">Home</a></li>
-                        <li class="dropdown"><a href="./bengaluru.html">Bengaluru</a>
+                        <li class="dropdown"><a href="Bengaluru.html">Bengaluru</a>
                             <ul class="nav-sub">
                                 <li> <a href="">Top Stories</a></li>
                                 <li> <a href="">Crime</a></li>
@@ -210,7 +210,7 @@ const navBar = () => {
                                 <li> <a href="">22in22</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown"><a href="">National</a>
+                        <li class="dropdown"><a href="national.html">National</a>
                             <ul class="nav-sub">
                                 <li> <a href="">Politics</a></li>
                                 <li> <a href="">Coronavirus</a></li>
@@ -220,7 +220,7 @@ const navBar = () => {
                                 <li> <a href="">West </a></li>
                             </ul>
                         </li>
-                        <li class="dropdown"><a href="">Sports</a>
+                        <li class="dropdown"><a href="#">Sports</a>
                             <ul class="nav-sub">
                                 <li> <a href="">Cricket</a></li>
                                 <li> <a href="">Formula 1</a></li>
