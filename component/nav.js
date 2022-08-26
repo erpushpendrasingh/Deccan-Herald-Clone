@@ -6,7 +6,7 @@ const navBar = () => {
                 <!-- <li><i class="fa-solid fa-xmark"></i></li> -->
                 <li> <a href="index.html">Home</a></li>
                 <li class="side-dropdown">
-                    <a href="#" class="toggle">Bengaluru </a>
+                    <a href="#" class="toggle">Bengaluru </a> 
                     <ul class="side-nav-sub">
                         <li> <a href="">Top Stories</a></li>
                         <li> <a href="">Crime</a></li>
@@ -81,7 +81,7 @@ const navBar = () => {
                     </ul>
                 </li>
                 <li class="side-dropdown">
-                    <a href="#" class="toggle">Videos</a>
+                    <a href="video.html" class="toggle">Videos</a>
                     <ul class="side-nav-sub">
                         <li> <a href="">Latest Videos</a></li>
                         <li> <a href="">Bengaluru</a></li>
@@ -260,7 +260,7 @@ const navBar = () => {
                                 <li> <a href="n">DH Education</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown"><a href="vedio.html">Videos</a>
+                        <li class="dropdown"><a href="video.html">Videos</a>
                             <ul class="nav-sub">
                                 <li> <a href="">Latest Videos</a></li>
                                 <li> <a href="">Bengaluru</a></li>
