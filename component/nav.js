@@ -37,7 +37,7 @@ const navBar = () => {
                     </ul>
                 </li>
                 <li class="side-dropdown">
-                    <a href="#" class="toggle">Sports</a>
+                    <a href="sports.html" class="toggle">Sports</a>
                     <ul class="side-nav-sub">
                         <li> <a href="">Cricket</a></li>
                         <li> <a href="">Formula 1</a></li>
@@ -220,7 +220,7 @@ const navBar = () => {
                                 <li> <a href="">West </a></li>
                             </ul>
                         </li>
-                        <li class="dropdown"><a href="#">Sports</a>
+                        <li class="dropdown"><a href="sports.html">Sports</a>
                             <ul class="nav-sub">
                                 <li> <a href="">Cricket</a></li>
                                 <li> <a href="">Formula 1</a></li>
