@@ -321,7 +321,7 @@ let foot = async () => {
      football(data.results);
 };
 football = (data) => {
-     let main = document.getElementById("foot");
+     let main = document.getElementById("football2");
      main.innerHTML = null;
 
      data.forEach((el) => {
