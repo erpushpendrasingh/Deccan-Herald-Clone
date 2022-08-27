@@ -159,7 +159,7 @@ const getData = async (query) => {
      // https://newsapi.org/v2/everything?q=${query}&from=2022-07-25&sortBy=publishedAt&apiKey=${key}
      try {
           let res = await fetch(
-               `https://newsapi.org/v2/everything?q=${query}&from=2022-07-26&sortBy=publishedAt&apiKey=a8c42c55e79c4f24931e0359b4081762`
+               `https://masai-mock-api-2.herokuapp.com/news/top-headlines?country=${query} `
           );
           let data = await res.json();
           let result = data.articles;
