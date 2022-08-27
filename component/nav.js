@@ -98,7 +98,7 @@ const navBar = () => {
                         <li> <a href="">Sunday Spotlight</a></li>
                     </ul>
                 </li>
-                <li> <a href="">Brandspot</a></li>
+                <li> <a href="brandspot.html">Brandspot</a></li>
             </ul>
             <div class="side-nav__close"><img
                     src="https://www.deccanherald.com/sites/deccanherald.com/themes/deccanherald/images/icons/close.png"
