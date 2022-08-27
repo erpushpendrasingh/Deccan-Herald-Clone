@@ -69,7 +69,7 @@ const navBar = () => {
                     </ul>
                 </li>
                 <li class="side-dropdown">
-                    <a href="#" class="toggle">Features</a>
+                    <a href="smallnav.html" class="toggle">Features</a>
                     <ul class="side-nav-sub">
                         <li> <a href="">Metrolife</a></li>
                         <li> <a href="">Entertainment</a></li>
@@ -91,7 +91,7 @@ const navBar = () => {
                     </ul>
                 </li>
                 <li class="side-dropdown">
-                    <a href="#" class="toggle">Specials</a>
+                    <a href="special.html" class="toggle">Specials</a>
                     <ul class="side-nav-sub">
                         <li> <a href="">Insight</a></li>
                         <li> <a href="">Point Blank</a></li>
@@ -249,7 +249,7 @@ const navBar = () => {
                                 <li> <a href="">Right in the Middle</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown"><a href="">Features</a>
+                        <li class="dropdown"><a href="smallnav.html">Features</a>
                             <ul class="nav-sub">
                                 <li> <a href="">Metrolife</a></li>
                                 <li> <a href="">Entertainment</a></li>
@@ -269,7 +269,7 @@ const navBar = () => {
                                 <li> <a href="">Popular </a></li>
                             </ul>
                         </li>
-                        <li class="dropdown"><a href="">Specials</a>
+                        <li class="dropdown"><a href="special.html">Specials</a>
                             <ul class="nav-sub">
                                 <li> <a href="">Insight</a></li>
                                 <li> <a href="">Point Blank</a></li>
