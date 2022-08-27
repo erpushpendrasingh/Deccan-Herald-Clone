@@ -96,21 +96,26 @@
            container.append(div);
 
             }else{
+
+                
+                    let img=document.createElement('img');
+
+                    img.src=data.articles[i].urlToImage;
+
+                   let description=document.createElement('p');
+                    description.innerText=data.articles[i].title;
+
+                   let publish=document.createElement('p');
+                  publish.innerText=data.articles[i].publishedAt;
+
+                div.append(img,description,publish);
+                container.append(div);
+                
                
-                let img=document.createElement('img');
-
-                img.src=data.articles[i].urlToImage;
-
-                let description=document.createElement('p');
-                description.innerText=data.articles[i].title;
-
-                let publish=document.createElement('p');
-                publish.innerText=data.articles[i].publishedAt;
-
-              div.append(img,description,publish);
-              container.append(div);
+               
 
             }
+          
 
                  
         
@@ -122,5 +127,6 @@
 </script>
 </html>
 <script src="index.js"></script>
+
 
 

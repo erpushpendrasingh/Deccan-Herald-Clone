@@ -17,7 +17,7 @@ const navBar = () => {
                     </ul>
                 </li>
                 <li class="side-dropdown">
-                    <a href="" class="toggle">Karnataka</a>
+                    <a href="karnataka.html" class="toggle">Karnataka</a>
                     <ul class="side-nav-sub">
                         <li> <a href="">Top Stories</a></li>
                         <li> <a href="">Politics</a></li>
@@ -202,7 +202,7 @@ const navBar = () => {
                                 <li> <a href="">Bengaluru 2040</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown"><a href="./karnataka.html">Karnataka</a>
+                        <li class="dropdown"><a href="karnataka.html">Karnataka</a>
                             <ul class="nav-sub">
                                 <li> <a href="">Top Stories</a></li>
                                 <li> <a href="">Politics</a></li>
