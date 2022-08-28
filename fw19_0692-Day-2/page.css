@@ -26,6 +26,9 @@ body{
     gap:20px;
  
 }
+#container>div>#child:hover,#container>div:hover{
+   text-decoration: underline;
+}
 #container>div{
     background-color: #f6f6f6;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
