@@ -1,0 +1,423 @@
+
+
+#right{
+    width: 50%;
+    /* background-color: gray; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: grey;
+}
+#box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.5);
+    height: auto;
+}
+#right>img{
+    width: 60%;
+    margin-top: 30px;
+    
+}
+#formcontainer{
+    box-shadow: 0 3px 22px #00000026;
+    width: 100%;
+    padding: 15px;
+    margin: 0px 30px 30px 30px ;
+}
+#right>#box>#formcontainer>#btn{
+    display: flex;
+    justify-content: left;
+    width: 94%;
+    gap: 15px;
+    padding: 10px;
+}
+.anchor{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 20px;
+    font-weight: bold;
+   
+}
+.line{
+    width: 30px;
+    height: 8px;
+    background-color: gray;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 15px;
+}
+form>input{
+    padding: 10px;
+    margin-top: 20px;
+}
+.go{
+    background-color:#ffc;
+    border: 1px solid #ffff43;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+#divform{
+    box-shadow: 0 3px 22px #00000026;
+}
+#about{
+    color: black;
+    margin: 50px;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    
+}
+#about+img{
+    width: 100%;
+}
+
+#about+img+p{
+    width: 100%;
+    line-height: 5px;
+    font-size: 20px;
+    line-height: 30px;
+    font-size: 18px;
+    padding: 40px;
+    background-color: #edf3f7;
+}
+
+#aboutline{
+    background-color: #0087a8;
+    width: 40px;
+    height: 10px;
+    margin: auto;
+}
+.price{
+    text-decoration: line-through;
+}
+
+#signUp>div{
+    display: flex;
+    margin: auto;
+    gap: 10px;
+    width: 100%;
+
+}
+#signUp>div>input{
+    padding: 10px;
+    width: 100%;
+
+}
+#signUp>div>select{
+    width: 103%;
+    
+}
+#loginbutton{
+    background-color: #0087a8;
+    border: none ;  
+    border-radius: 20px;    
+    color: white;
+    font-size: 18px;
+}
+.ads{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    justify-content: center;
+    width: 280px;
+    height: 210px;
+    padding: 20px;
+    box-shadow: 0 3px 22px #00000026;
+    border-radius: 10px;
+
+
+}
+.ads:hover{
+    cursor: pointer;
+}
+#subscribe{
+ 
+        background-color: #0087a8;
+        border: none ;  
+        border-radius: 20px;    
+        color: white;
+        font-size: 18px;
+    
+}
+#applypromo{
+    border:1px solid #0087a8;
+    border-radius: 0px 5px 5px 0px ;
+    background-color: #acacac;
+    color: white;
+}
+.conditions{
+    color: #0087a8;
+    font-weight: bold;
+}
+
+.h3{
+    text-align:center;
+    color:#0087a8;
+    margin:5px;
+}
+.p{
+    text-align: center;
+    margin: 5px;
+    font-size: 20px;
+}
+
+#holder2 {
+    display: flex;
+    flex-direction: column;
+}
+#leftline,#rightline{
+    width: 60%;
+    border-top: 1px solid black;
+    opacity: 0.9;
+    margin: 10px;
+}
+
+.Privacy{
+    color: #f7b825;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#address>a{
+    color:#0087a8
+}
+#address>a:link{
+    color: #0087a8;
+    text-decoration: none;
+}
+#address>a:visited{
+    text-decoration: none;
+    color: #0087a8;
+}
+
+#message{
+    background-color: pink;
+    
+    color: red;
+    border-radius: 5px;
+}
+#wem{
+    font-size: 12px;
+}
+#messagelist{
+    list-style-type: none;
+}
+
+#parent{
+    width: 100%;
+    height: 120vh;
+    position: absolute;
+    z-index: 100;
+    top: 500px;
+    padding: 20px;
+}
+#remove{
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    background-color: white;
+    color: #0087a8;
+    border-radius: 25px;
+}
+#loginmessage{
+    color: white;
+    font-size: 12px;
+
+}
+#usermessage{
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+#popup{
+    height: 150px;
+    width: 20%;
+    background-color: rgb(0 135 168);
+    margin: auto;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    gap: 10px;
+
+}
+#PaymentBox{
+    width: 25%;
+    display: flex;
+    justify-content: end;
+}
+
+
+#paywindow{
+    width: 25%;
+    height: 120vh;
+    background-color: white;
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: black;
+    gap:20px;
+
+}
+
+#box1{
+   display: flex;
+   padding: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    
+   
+}
+
+.payment{
+    border: 1px solid hsl(60deg 30% 76%);
+    background-color: hsl(60deg 100% 94%);
+    margin: auto;
+    height: 150px;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    line-height: 2;
+    border-radius: 10px;
+  
+}
+.payment:hover{
+    cursor: pointer;
+}
+.holder{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.holder>p{
+    color: #acacac;
+}
+#cp{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.rightlogo{
+    height: 50px;
+}
+#Limg{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    padding: 10px;
+}
+#Limg:hover{
+    background-color: #acacac;
+}
+#blue{
+    width:50px;
+    height: 10px;
+    background-color:#0087a8;
+    margin: auto;
+    margin-top: 5px;
+}
+@media all and (min-width:670px) and (max-width:1100px) {
+    #adsparent{
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+    }
+    #right>#box>img{
+        width: 90%;
+        margin-top: 30px;
+    }
+    #right{
+        width: 100%;
+    }
+    .formcolumn{
+        display: contents;
+    }
+    #paywindow{
+        width: 50%;
+        top: 103px;
+        right: 8px;
+    }
+    #parent{
+        top: 500px;
+        left: 350px;
+       }
+       #popup{
+        width: 50%;
+        
+       
+       }
+       #paywindow{
+        width: 50%;
+        top: 450px;
+       }
+    
+}
+
+@media all and (min-width:320px) and (max-width:671px){
+    #right{
+        width: 100%;
+    }
+    #left{
+        width: 100%;
+        width: auto;
+        position: relative;
+    }
+    #adsparent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ads{
+        width: 100%;
+        height: 200px;
+    }
+   #signUp>#formcolumn{
+    display: contents;
+   }
+   #signUp>#formcolumn1{
+    display: contents;
+   }
+   #signUp>#formcolumn2{
+    display: contents;
+   }
+   #signUp>#formcolumn1>select{
+    padding: 10px;
+    width: 100%;
+   }
+ 
+   #paywindow{
+    width: 100%;
+    top:1000px
+   }
+ #popup{
+    width: 100%;
+  
+ }
+ #parent {
+    top: 1700px
+ }
+ #subscribe{
+    font-size: 12px;
+ }
+ .anchor{
+    font-size: 17px;
+ }
+}

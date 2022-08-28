@@ -1,0 +1,32 @@
+#search_result {
+     display: flex;
+     width: 90%;
+     flex-direction: column;
+     margin: 20px auto;
+     gap: 50px;
+}
+.imageDiv {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     width: 250px;
+     height: 210px;
+}
+.imageDiv > img {
+     width: 250px;
+     height: 200px;
+}
+.card {
+     width: 700px;
+     height: 200px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+.box {
+     border: 2px solid teal;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     gap: 30px;
+}
