@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+
+
+        }
+
+        #paybox {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            width: 75%;
+            padding: 40px;
+            margin-top: 0px;
+            gap: 5px;
+            color: white;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 25px;
+        }
+
+        form>h2 {
+            color: white;
+
+
+        }
+
+        input {
+            width: 80%
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            width: 25%;
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            background-color: #0087a8;
+            justify-content: center;
+            align-items: center;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 25px;
+
+        }
+
+        img {
+            height: 100px;
+            width: 100px;
+        }
+
+        #submit {
+            margin: auto;
+            width: 91%;
+            margin-top: 5px;
+            background-color: #0087a8;
+            border: 1px solid white;
+            color: white;
+            border-radius: 10px;
+        }
+
+
+
+        input {
+            padding: 5px;
+        }
+
+        #gocart {
+            width: 100%;
+            display: flex;
+        }
+
+        #gocart>button {
+            margin: auto;
+        }
+
+        #paybox>div {
+            display: flex;
+        }
+
+        #message {
+            color: white;
+            font-weight: bold;
+        }
+
+        #formguide {
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        @media all and (min-width:770px) and (max-width:1180px) {
+            form {
+                width: 75%;
+            }
+
+            #paybox {
+                width: 70%;
+            }
+
+            input {
+                width: 90%;
+            }
+
+            h2 {
+                font-size: 25px;
+            }
+
+        }
+
+
+        @media all and (min-width:300px) and (max-width:770px) {
+            form {
+                width: 75%;
+            }
+
+            #paybox {
+                width: 70%;
+            }
+
+            input {
+                width: 90%;
+            }
+
+            h2 {
+                font-size: 15px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+
+        <form action="">
+            <img src="images/logo.png" alt="">
+            <h2>You are Paying Deccan Herald</h2>
+            <div id="paybox">
+                <div id="formguide"></div>
+                <label for="cardnumber" id="namelabel">Card No</label>
+                <input type="number" name="" id="cardnumber" value="">
+                <label for="cvv">CVV</label>
+                <input type="number" name="" id="cvv" value="">
+                <label for="date">Expiry Date</label>
+                <input type="month" id="date" value="">
+                <input type="submit" id="submit">
+            </div>
+            <div id="message"></div>
+        </form>
+
+    </div>
+</body>
+
+</html>
+<script>
+
+
+    let cardflag = false
+    let cvvflag = false
+    let dateflag = false
+
+    cardmessage = document.createElement("p")
+    cvvmessage = document.createElement("p")
+    datemessage = document.createElement("p")
+
+
+
+    let guide = document.createElement("p")
+    let formguide = document.querySelector("#formguide")
+    formguide.append(guide)
+    let cardnumber = document.querySelector("#cardnumber")
+    cardnumber.addEventListener("input", function () {
+        event.preventDefault()
+        if ((cardnumber.value).length === 16) {
+            guide.innerText = ""
+            cardflag = true
+            message.innerHTML = ""
+            console.log(cardflag)
+        } else {
+            guide.innerText = "Enter your 16 digit Debit/Card Number"
+            cardnumberflag = false
+
+        }
+    })
+    let CVV = document.querySelector("#cvv")
+    CVV.addEventListener("input", function () {
+        event.preventDefault()
+
+        if ((CVV.value).length === 3) {
+            guide.innerText = ""
+            cvvflag = true
+            message.innerHTML = ""
+            console.log(cvvflag)
+        } else {
+            guide.innerText = "Enter your 3 digit CVV"
+            cvvflag = false
+
+        }
+
+    })
+    let date = document.querySelector("#date")
+    date.addEventListener("input", function () {
+        event.preventDefault()
+        if (date.value === "") {
+            dateflag = false
+        } else {
+            dateflag = true
+            message.innerHTML = ""
+            console.log(dateflag)
+        }
+    })
+    console.log(date.value)
+    let message = document.querySelector("#message")
+    let submit = document.querySelector("#submit")
+    submit.value = " Pay"
+    submit.addEventListener("click", function () {
+        event.preventDefault()
+        if (cardflag === true && cvvflag === true && dateflag === true) {
+            // alert("done")
+            window.location.assign("index.html")
+        } else {
+            submit.addEventListener("click", boom)
+        }
+
+
+    })
+
+
+
+    function boom() {
+
+        if (cardnumber.value === "") {
+
+            cardmessage.innerText = "Please fill Card details first"
+            message.append(cardmessage)
+        } else {
+            message.innerHTML = ""
+            cardmessage.innerText = ""
+        }
+        if (CVV.value === "") {
+
+            cvvmessage.innerText = "Please fill CVV"
+            message.append(cvvmessage)
+        } else {
+            cvvmessage = ""
+            message.innerHTML = ""
+        }
+        if (date.value === "") {
+
+            datemessage.innerText = "Please set Expiry date of Your card "
+            message.append(datemessage)
+        } else {
+            datemessage.innerText = ""
+            message.innerHTML = ""
+        }
+
+
+    }
+
+
+
+
+</script>
