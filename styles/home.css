@@ -1,0 +1,219 @@
+#append {
+     width: 85%;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 20px;
+     margin: 10px auto;
+}
+#append > div > img {
+     width: 370px;
+     height: 300px;
+     display: block;
+     margin: auto;
+}
+#append > div {
+     width: 380px;
+     height: 400px;
+     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+     background-color: white;
+     margin: auto;
+     padding: 15px;
+}
+body {
+     background-color: rgb(229, 238, 247);
+}
+#append > div > div {
+     display: flex;
+     margin-top: 10px;
+     gap: 10px;
+}
+#append > div > #sub > h3 {
+     font-size: 15px;
+}
+#append > div > #sub > img {
+     width: 150px;
+     height: 100px;
+}
+#append > div:nth-child(3) {
+     height: 184px;
+     background-color: rgb(229, 238, 247);
+     position: relative;
+     padding-bottom: 56.25%;
+
+     overflow: hidden;
+}
+#append > div:nth-child(3) img {
+     display: none;
+}
+#append > div:nth-child(3) h3 {
+     display: none;
+}
+#append > div:nth-child(3) > #frame {
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     left: 0px;
+     top: 0px;
+     overflow: hidden;
+     width: "100%";
+     height: "100%";
+}
+h1 {
+     width: 400px;
+     margin-left: 115px;
+}
+#stories > div:nth-child(4) img {
+     display: none;
+}
+#stories > div:nth-child(4) h3 {
+     display: none;
+}
+#stories > div > #sub > img {
+     width: 150px;
+     height: 100px;
+}
+#stories > div > div {
+     display: flex;
+     margin-top: 10px;
+     gap: 10px;
+}
+#stories > div {
+     width: 280px;
+     height: 300px;
+     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+     background-color: white;
+     margin: auto;
+     padding: 15px;
+}
+#stories > div > img {
+     width: 250px;
+     height: 200px;
+     display: block;
+     margin: auto;
+}
+#stories {
+     width: 90%;
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 20px;
+     margin: 10px auto;
+     background-color: white;
+}
+#stories > div:nth-child(4) {
+     height: 140px;
+
+     box-shadow: none;
+
+     position: relative;
+     padding-bottom: 56.25%;
+
+     overflow: hidden;
+}
+#stories > div > #story {
+     display: flex;
+     gap: 20px;
+     margin: 30px auto;
+}
+#stories > div > #story img {
+     width: 100px;
+     height: 100;
+}
+#stories > div:nth-child(4) > #frame {
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     left: 0px;
+     top: 0px;
+     overflow: hidden;
+     width: "100%";
+     height: "100%";
+}
+#stories > div > #story h3 {
+     font-size: 15px;
+}
+#karn {
+     display: flex;
+     justify-content: space-between;
+     margin: 40px 110px;
+}
+#bang {
+     display: flex;
+     justify-content: space-between;
+     margin: 40px 110px;
+}
+#karnataka {
+     width: 85%;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 20px;
+
+     margin: 10px auto;
+}
+#karnataka > div > img {
+     width: 350px;
+     height: 300px;
+     display: block;
+     margin: auto;
+}
+#karnataka > div > div {
+     display: flex;
+     margin-top: 10px;
+     gap: 10px;
+}
+#karnataka > div > #sub > h3 {
+     font-size: 15px;
+}
+#karnataka > div > #sub > img {
+     width: 150px;
+     height: 100px;
+}
+#karnataka > div {
+     width: 380px;
+     height: 400px;
+     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+     background-color: white;
+     margin: auto;
+     padding: 15px;
+}
+#banglure {
+     width: 85%;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 20px;
+
+     margin: 10px auto;
+}
+#banglure > div > img {
+     width: 350px;
+     height: 300px;
+     display: block;
+     margin: auto;
+}
+#banglure > div > div {
+     display: flex;
+     margin-top: 10px;
+     gap: 10px;
+}
+#banglure > div > #sub > h3 {
+     font-size: 15px;
+}
+#banglure > div > #sub > img {
+     width: 150px;
+     height: 100px;
+}
+#banglure > div {
+     width: 380px;
+     height: 400px;
+     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+     background-color: white;
+     margin: auto;
+     padding: 15px;
+}
+h1:first-child {
+     margin-top: 250px;
+}
+h3:hover {
+     cursor: pointer;
+     border-bottom: 1px solid;
+     font-size: 13px;
+}

@@ -1,0 +1,302 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;    
+    font-family: 'Source Sans Pro', sans-serif;
+}
+ol, ul {
+    list-style: none;
+}
+a{
+    text-decoration: inherit;
+    color: inherit;
+}
+html, body, div, span, applet, object, iframe, h5, h6, p, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, fieldset, form, label, legend, input, select, textarea, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+            /** Footer lists Styling Start */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.newfooter{
+    width: 100%;
+    background-color: #0087A8;
+    padding: 35px 0px 30px;
+}
+
+
+.accordion {
+    width: 10.5%;
+    margin: 0 2% 0 0;
+    float: left;
+}
+.accordion>p{
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    border-bottom:1px solid #00abd6;
+    padding-bottom: 7px;
+    margin: 7px 7px 0px 0px;
+    position: relative;
+}
+
+.lists{
+    width: auto;
+    margin: 0 0 20px 0 !important;
+    float: left;
+}
+.lists li{
+    padding: 3px 0;
+    line-height: 15px;
+}
+
+.lists a{
+    font-size: 14px;
+    color: white;
+}
+.accordion .side-nav-list {
+    display: none !important;
+    cursor: pointer;
+    height: 21px;
+    position: absolute;
+    width: 40px;
+    right: 0px;
+    top: 0px;
+}
+.accordion .side-nav-list:before, .accordion .side-nav-list:after {
+    background: #fff;
+    content: '';
+    height: 2px;
+    left: 13px;
+    position: absolute;
+    top: 7px;
+    width: 10px;
+    transition: transform 500ms ease;
+}
+.side-nav-list.collapsed:before {
+    transform: rotate(180deg);
+}
+.side-nav-list.collapsed:after {
+    transform: rotate(90deg);
+}
+
+        /** Footer lists Styling End */
+
+        /*! Special News Styling Start */
+.newfooter_specials {
+    margin-top: 18px;
+}
+.specials {
+    margin-top: 7px;
+    float: left;
+    margin: 0 2% 0 0;
+}
+.specials_news {
+    background: #00788e;
+    color: white;
+    padding: 5px 7px !important;
+    font-size: 14px;
+    border-radius: 3px;
+    font-weight: 700;
+    float: left;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 7px 7px 0px 0px;
+}
+            /*! Special News Styling End */
+        
+        /*? Footer Two Design Start */
+/* .hide_below1024 {
+        display: inline;
+    } */
+.newfooter_two {
+    background: #f6f6f6;
+    padding: 27px 0 24px 0;
+}
+.newfooter_two ul li {
+    min-height: 44px;
+    line-height: 18px;
+}
+.newfooter_two a, .newfooter_two p {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0;
+}
+.newfooter_section_two_blocks {
+    float: left;
+    width: 23.3%;
+    margin: 0 2% 0 0;
+}
+.newfooter_section_two_blocks ul li {
+    padding-bottom: 3pt;
+    min-height: 0px !important;
+}
+.newfooter_section_two_blocks p, .newfooter_section_two_blocks_last p {
+    text-transform: uppercase;
+    padding: 0 0 7px 0;
+    margin: 0 0 7px 0;
+    font-weight: 700;
+    border-bottom: 1px solid #cbc8c8;
+}
+.newfooter_section_two_blocks_last {
+    float: left;
+    width: 23%;
+    /* margin: 0 2% 0 0; */
+    border-left: 1px solid #cbc8c8;
+    padding: 0 0 5px 19px;
+    box-sizing: border-box;
+}
+.newfooter_section_two_blocks_last:last-child {
+    margin: 0;
+}
+.newfooter_section_two_blocks p, .newfooter_section_two_blocks_last p {
+    text-transform: uppercase;
+    padding: 0 0 7px 0;
+    margin: 0 0 7px 0;
+    font-weight: 700;
+    border-bottom: 1px solid #cbc8c8;
+}
+
+.newfooter_section_two_blocks_last ul li {
+    display: inline;
+    padding: 0 10px 0 0;
+}
+.ourgroupsites_lable_mt {
+    margin-top: 18px !important;
+}
+
+.newfooter_section_two_blocks_last ul.app-download-link {
+    height: 77px;
+}
+.pri_tr_dis li a {
+    font-size: 12px;
+    color: #858383 !important;
+}
+.pri_tr_dis {
+    margin-top: 10px;
+}
+.mobile-only{
+    display:none;
+}
+            /*? Footer Two Design End */
+
+
+.newfooter_section_three {
+    background: #0087a8;
+    padding: 10px 0 7px 0;
+    color: #FFF;
+    font-size: 13px;
+}
+.newfooter_fl {
+    float: left;
+}
+.newfooter_fr {
+    float: right;
+}
+.newfooter_social ul li {
+    display: inline-block;
+    padding: 0 0 0 6px;
+}
+.newfooter_social ul li img {
+    width: 15px;
+    height: 15px;
+}
+        
+        /* Responsive Footer */
+@media all and (min-width: 1200px){
+    .section-container {
+        width: auto;
+        max-width: 1180px;
+        float: none;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 0px;
+        padding-right: 0px;
+    }   
+}
+@media all and (min-width: 992px) and (max-width: 1199px){
+    .section-container {
+        margin: auto;
+        max-width: 780px;
+    }
+
+}
+@media all and (min-width: 768px) and (max-width: 991px){
+    .section-container {
+        margin: auto;
+        width: auto;
+    }
+}
+@media all and (max-width: 1024px){
+    .hide_below1024 {
+        display: none;
+    }
+    .newfooter_section_two_blocks {
+        width: 100%;
+    }
+    .newfooter_section_two_blocks_last {
+        width: 100%;
+        border-left: none;
+        padding: 0px;
+    }
+    .mobile-only{
+        display:block;
+    }
+    .desktop-only {
+        display: none;
+    }
+    .newfooter_section_two_blocks p, .newfooter_section_two_blocks_last p {
+    margin: 17px 0 7px;
+    }
+    .section-container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .newfooter_section_three {
+        margin-bottom: 50px;
+    }
+    .specials  {
+        width: 100%;
+        margin: 1% 2% 0 0;
+        display: block;
+    }
+    .specials:last-child {
+        margin: 1% 2% 0 0;
+    }
+    .specials .specials_news {
+        clear: both;
+    }
+    .accordion {
+        float: none;
+        width: auto;
+    }
+    .newfooter .accordion p {
+        display: inline-block;
+        width: 100%;
+    }
+    .accordion .side-nav-list {
+        display: block !important;
+    }
+    .lists {
+        width: 100%;
+        display: none;
+        opacity: 0;
+        transition: opacity 2s ease-out;
+    }
+    .lists.show {
+        width: 100%;
+        display: block;
+        opacity: 1; 
+    }
+}

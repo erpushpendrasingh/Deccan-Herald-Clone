@@ -1,0 +1,137 @@
+.main-container {
+     /* border: 1px solid teal; */
+     display: flex;
+     flex-direction: row;
+     /* width: 90%; */
+     margin: 30px auto;
+}
+
+#image {
+     width: 150px;
+     height: 150px;
+}
+
+#left-container {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     width: 60%;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.newsContainer {
+     display: flex;
+     width: 360px;
+     margin: 10px;
+     gap: 20px;
+     align-items: center;
+     margin: 5px;
+}
+
+.newsContainer {
+     height: 200px;
+}
+
+/* top section */
+.first-div {
+     height: 20px;
+     margin: auto;
+     display: flex;
+}
+
+a {
+     text-decoration: none;
+}
+
+.btn {
+     display: flex;
+     flex-direction: row;
+     width: 80%;
+     border-bottom: 1px solid #ccc;
+     height: 45px;
+}
+
+.btn > button {
+     width: 130px;
+}
+
+#a1 {
+     color: white;
+     font-size: 20px;
+}
+
+#btn1 {
+     background-color: #0d70b9;
+     border: none;
+}
+
+#a2 {
+     color: black;
+     font-size: 20px;
+}
+
+#btn2 {
+     background-color: rgb(249, 241, 241);
+     border: none;
+}
+.brand {
+     /* border: 1px solid red; */
+     width: 90%;
+     margin: auto;
+}
+.RnewsContainer {
+     display: flex;
+     height: 130px;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     gap: 10px;
+}
+
+.RimageContainer > img {
+     width: 150px;
+     height: 130px;
+}
+.RaboutContainer {
+     height: 150px;
+}
+#right-container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+     width: 30%;
+     margin: 0px auto;
+     height: 300px;
+     gap: 5px;
+}
+.title-one-div {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+     margin: auto;
+}
+.tag {
+     width: 100px;
+     padding: 12px;
+     text-align: center;
+     position: relative;
+}
+
+.tag::before {
+     content: "";
+     position: absolute;
+     width: 35px;
+     background: #aba12b;
+     height: 12px;
+     top: 0px;
+     transform: translate(-50%, -50%);
+     left: 38px;
+}
+
+.a-tag > a {
+     color: #0d70b9;
+}

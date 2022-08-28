@@ -1,0 +1,81 @@
+#main-contain {
+     width: 88%;
+     margin: 15px auto;
+}
+#nav2 {
+     height: auto;
+     display: flex;
+     align-items: center;
+     border-top-style: none;
+     border-left-style: none;
+     border-right-style: none;
+}
+#first {
+     background-color: #68a923;
+     height: 60px;
+     color: white;
+     width: 15%;
+     font-size: 25px;
+     font-weight: bold;
+     display: flex;
+     align-items: center;
+     padding-left: 2%;
+}
+#second {
+     margin-left: 4%;
+     width: 65%;
+}
+#second > a {
+     padding-left: 4%;
+     text-decoration: none;
+     color: black;
+}
+.mid-div {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-top: 1%;
+}
+.mid-div > a {
+     text-decoration: none;
+}
+.mid-div > a > h1 {
+     color: black;
+     border: 8px solid #68a923;
+     border-bottom-style: none;
+     border-left-style: none;
+     border-right-style: none;
+}
+#container {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 20px 30px;
+     margin: auto;
+}
+#container > div > #child > img {
+     width: 20%;
+     margin-left: 2%;
+}
+#container > div > img {
+     width: 100%;
+     display: block;
+     margin: auto;
+}
+#container > div > #child {
+     display: flex;
+     margin-top: 2%;
+     gap: 20px;
+}
+#container > div {
+     background-color: #f6f6f6;
+     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+     cursor: pointer;
+}
+#container > div > #child > p {
+     font-weight: bold;
+     margin-left: 2%;
+}
+#container > div > p {
+     font-weight: bold;
+     margin-left: 2%;
+}
