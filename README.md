@@ -24,9 +24,10 @@ To deploy this project run
 ## Features
 - User Authentication
 
-- User Details Management
+- User can read daily newspaper published from the Indian state of Karnataka.
 
 - Product Gallery & Details Gallery
+- <img src="" alt=""/>
 
 - Order Section
 
@@ -34,11 +35,11 @@ To deploy this project run
 
 
 ## Teams
-- Varainder Brar 
+- Pushpendra Singh
 - Sonia Saini
-- Kunal Chandel
-- Rajiv Suting
-- Rajeev Awasti 
+- Dharmendra Yadav
+- Rajul Tiwari
+- Rohan kumar
 ## Screenshots
 
 ![App Screenshot](images/Zara.png)
