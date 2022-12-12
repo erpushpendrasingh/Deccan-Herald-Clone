@@ -1,7 +1,7 @@
 
 # Deccan Herald
 
-The company specializes in fast fashion, and products include clothing, accessories, shoes, swimwear, beauty, and perfumes. It is the largest company in the Inditex group, the world's largest apparel retailer. Zara is one of the most successful fashion retail brands in the world
+Deccan Herald is an Indian English language daily newspaper published from the Indian state of Karnataka. It was founded by K. N. Guruswamy, a liquor businessman from Ballari and was launched on 17 June 1948
 
 
 ## Deployment
