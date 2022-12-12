@@ -25,13 +25,11 @@ To deploy this project run
 - User Authentication
 
 - User can read daily newspaper published from the Indian state of Karnataka.
+- User can bye premium subscription planes
 
 - Product Gallery & Details Gallery
-- <img src="" alt=""/>
 
 - Order Section
-
-- Payment Module
 
 
 ## Teams
