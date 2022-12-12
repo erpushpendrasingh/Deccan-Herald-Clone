@@ -1,5 +1,5 @@
 
-# Zara Website+ Clone
+# Deccan Herald
 
 The company specializes in fast fashion, and products include clothing, accessories, shoes, swimwear, beauty, and perfumes. It is the largest company in the Inditex group, the world's largest apparel retailer. Zara is one of the most successful fashion retail brands in the world
 
