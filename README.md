@@ -9,7 +9,7 @@ Deccan Herald is an Indian English language daily newspaper published from the I
 To deploy this project run
 
 ```bash
- github- Deployment - https://kunalchandel4.github.io/teamDeskChampions/
+ github- Deployment - https:https://deccan-herald-clone.netlify.app/
 ```
 
 
